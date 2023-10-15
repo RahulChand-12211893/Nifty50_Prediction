@@ -1,0 +1,49 @@
+                                          Summary of the code..
+
+1. Importing Libraries: You start by importing the necessary libraries, including yfinance for fetching               stock data and RandomForestClassifier from sklearn.ensemble for building a machine learning model.
+
+2. Fetching Nifty50 Data:
+We use yfinance to fetch historical data for the Nifty50 index.
+
+3. Data Cleaning and Preparation:
+
+  We remove unnecessary columns (Dividends and Stock Splits).
+  We create a target variable Tomorrow which is the closing price of the next day.
+  We create a binary target variable Target based on whether the price will go up or down.
+
+
+4. Machine Learning Model:
+We use a Random Forest Classifier with specific hyperparameters (e.g., n_estimators, min_samples_split) for the initial model.
+
+
+
+5. Training and Evaluation:
+train the model on a subset of the data and evaluate its performance using precision score.
+
+
+6. Backtesting:
+defining functions for making predictions and backtesting them over different time periods.
+
+
+7. Feature Engineering:
+You create new predictors based on rolling averages and trends over different time horizons.
+
+
+8. Data Cleaning (Again):
+You remove rows with missing values.
+
+
+9. Model Updating:
+Update the model with different hyperparameters.
+
+
+10. Prediction Probability and Thresholding:
+Using the predicted probabilities to make more confident predictions.
+
+
+11. Backtesting with Updated Model:
+We are now runing backtests with the updated model.
+
+
+12. Final Evaluation:
+Now evaluating the final model's performance.
